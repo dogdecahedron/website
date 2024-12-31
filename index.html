@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dogdecahedron ($dodge)</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            background-color: #8538c7;
+            color: #38c74c;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #8538c7;
+        }
+
+        img {
+            width: 256px;
+            height: 256px;
+            margin: 20px 0;
+        }
+
+        .token-address {
+            word-break: break-all;
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        a {
+            color: #38c74c;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background: rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .background-container {
+            position: absolute;
+            top: -32px;
+            left: -32px;
+            right: -32px;
+            bottom: -32px;
+            pointer-events: none;
+            z-index: 0;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .bg-text {
+            position: absolute;
+            font-family: "Comic Sans MS", cursive;
+            color: #F4D03F;
+            opacity: 0.15;
+            white-space: nowrap;
+            font-size: 24px;
+        }
+
+        /* First row */
+        .text1 { top: 5%; left: 15%; transform: rotate(-28deg); }
+        .text2 { top: 5%; left: 50%; transform: rotate(25deg); }
+        .text3 { top: 5%; right: 15%; transform: rotate(-31deg); }
+        .text4 { top: 5%; right: 38%; transform: rotate(23deg); }
+
+        /* Second row */
+        .text5 { top: 23%; left: 8%; transform: rotate(29deg); }
+        .text6 { top: 23%; left: 38%; transform: rotate(-24deg); }
+        .text7 { top: 23%; right: 28%; transform: rotate(32deg); }
+        .text8 { top: 23%; right: 8%; transform: rotate(-27deg); }
+
+        /* Third row */
+        .text9 { top: 41%; left: 12%; transform: rotate(23deg); }
+        .text10 { top: 41%; left: 42%; transform: rotate(-33deg); }
+        .text11 { top: 41%; right: 12%; transform: rotate(26deg); }
+        .text12 { top: 41%; right: 42%; transform: rotate(-25deg); }
+        .text13 { top: 41%; left: 72%; transform: rotate(28deg); }
+
+        /* Fourth row */
+        .text14 { top: 59%; left: 8%; transform: rotate(-29deg); }
+        .text15 { top: 59%; left: 35%; transform: rotate(31deg); }
+        .text16 { top: 59%; right: 35%; transform: rotate(-25deg); }
+        .text17 { top: 59%; right: 8%; transform: rotate(28deg); }
+        .text18 { top: 59%; right: 62%; transform: rotate(-31deg); }
+
+        /* Fifth row */
+        .text19 { top: 77%; left: 15%; transform: rotate(-30deg); }
+        .text20 { top: 77%; left: 45%; transform: rotate(27deg); }
+        .text21 { top: 77%; right: 15%; transform: rotate(-28deg); }
+        .text22 { top: 77%; right: 45%; transform: rotate(25deg); }
+
+        /* Bottom row */
+        .text23 { top: 92%; left: 8%; transform: rotate(30deg); }
+        .text24 { top: 92%; left: 38%; transform: rotate(-26deg); }
+        .text25 { top: 92%; right: 28%; transform: rotate(24deg); }
+        .text26 { top: 92%; right: 8%; transform: rotate(-29deg); }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <div class="bg-text text1">much shap</div>
+        <div class="bg-text text2">wuuf</div>
+        <div class="bg-text text3">dogdecahedron</div>
+        <div class="bg-text text4">such cornr</div>
+        <div class="bg-text text5">dun drap</div>
+        <div class="bg-text text6">much pump</div>
+        <div class="bg-text text7">waow</div>
+        <div class="bg-text text8">wuuf</div>
+        <div class="bg-text text9">much shap</div>
+        <div class="bg-text text10">such cornr</div>
+        <div class="bg-text text11">dun drap</div>
+        <div class="bg-text text12">much pump</div>
+        <div class="bg-text text13">waow</div>
+        <div class="bg-text text14">dogdecahedron</div>
+        <div class="bg-text text15">wuuf</div>
+        <div class="bg-text text16">such cornr</div>
+        <div class="bg-text text17">much shap</div>
+        <div class="bg-text text18">dun drap</div>
+        <div class="bg-text text19">much pump</div>
+        <div class="bg-text text20">waow</div>
+        <div class="bg-text text21">wuuf</div>
+        <div class="bg-text text22">dogdecahedron</div>
+        <div class="bg-text text23">such cornr</div>
+        <div class="bg-text text24">much shap</div>
+        <div class="bg-text text25">dun drap</div>
+        <div class="bg-text text26">much pump</div>
+    </div>
+    <div class="container">
+        <img src="logo.png" alt="Dogdecahedron Logo">
+        
+        <div class="token-address">
+            FEPAWwVaRQFTFxRxUCagjfXTEDkTq2gvcmpLQVRdpump
+        </div>
+
+        <div class="links">
+            <a href="https://dexscreener.com/solana/fzys2g9r1ckf1xsceiah5hx3jgztdg4qsavupmqn8ozu" target="_blank">Dex</a>
+            <a href="https://t.me/dodgeportal" target="_blank">Telegram</a>
+            <a href="https://x.com/terroriley20175/status/1873268074713120819?s=46" target="_blank">OG Tweet</a>
+        </div>
+    </div>
+</body>
+</html> 
